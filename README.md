@@ -7,4 +7,5 @@
 - uvicorn app.main:app --reload
 ---------------
 
-# 1. Consider pushing a few values into the table trades before hitting the routes/endpoints. 
+# 1. Consider pushing a few values into the table trades before hitting the routes/endpoints.
+### 2. Use pgAdmin 4 to ease the workflow of settings things up and test things smoothly.
