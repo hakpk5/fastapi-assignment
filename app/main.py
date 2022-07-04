@@ -73,3 +73,9 @@ def advance_filtering(asset_class: Optional[str], end: Optional[datetime] , star
         ).all()
   return trades
 
+@app.get('/pagination')
+def pagination(page_number: int, db: Session = Depends(get_db)):
+  RowsPerPage = 10
+  offset = (page_number - 1) * RowsPerPage
+  trades = db.query(models.Trades).offset(offset).limit(RowsPerPage).all()
+  return trades
