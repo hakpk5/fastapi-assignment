@@ -5,3 +5,6 @@
 - pip install -r requirements.txt relative to your current directory
 - Change the interpreter to use the venv\Scripts\python.exe
 - uvicorn app.main:app --reload
+---------------
+
+# 1. Consider pushing a few values into the table trades before hitting the routes/endpoints. 
